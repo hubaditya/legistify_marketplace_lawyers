@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/drawer">
+
+        <com.example.aditya.myapplication.view.CircularImageViewBorder
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image"
+            android:scaleType="fitCenter"
+            android:id="@+id/view"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Aditya Srivastava"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="beingaditya95@gmail.com"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView13"
+            android:layout_below="@+id/textView"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="8dp" />
+
+    <View
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/drawerList"
+        android:background="#F5F5F5"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList2"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

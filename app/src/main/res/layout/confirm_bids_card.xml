@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="3dp"
+    android:paddingRight="8dp">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardConfirm"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="4dp">
+
+        <com.example.aditya.myapplication.view.CircularImageView
+            android:id="@+id/imageView2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/green"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid confirmed on 15/05/2016"
+            android:id="@+id/textView29"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Incorporation of Pvt. Ltd."
+            android:paddingBottom="8dp"
+            android:textStyle="bold"
+            android:id="@+id/textView20"
+            android:layout_below="@+id/textView29" />
+
+        <View
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textView20"
+            android:background="#F5F5F5"/>
+
+        <com.example.aditya.myapplication.view.CircularImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/image"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Aditya Srivastava"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/iv"
+            android:layout_alignTop="@+id/imageView3" />
+
+        <LinearLayout
+            android:layout_below="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignBottom="@+id/imageView3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/call"
+                android:id="@+id/imageView13"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginStart="-20dp"/>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/email"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/sms"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/imageView3" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>

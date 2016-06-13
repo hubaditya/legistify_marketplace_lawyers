@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar5"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/profile_back"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Profile"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardConfirm"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Info"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <View
+            android:id="@+id/vinfo"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/info"
+            android:background="#F5F5F5"/>
+
+        <com.example.aditya.myapplication.view.CircularImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/vinfo"
+            android:layout_height="60dp"
+            android:src="@drawable/image"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Aditya Srivastava"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp"
+            android:text="A one line description about myself"
+            android:layout_toEndOf="@+id/imageView"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:text="Delhi"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="30dp"
+            android:text="5-6 years"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/edit"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/imageView"
+            android:textStyle="bold"
+            android:text="Services"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Incorporation, Trademark, Trade Licence, Legal cases"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="8dp"
+            android:layout_toStartOf="@+id/iv3"/>
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/edit"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:id="@+id/cardCon"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/ws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/edit"
+            android:layout_marginLeft="4dp"
+            android:layout_alignEnd="@+id/wsd" />
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ws"
+            android:background="#F5F5F5"/>
+
+        <TextView
+            android:id="@+id/wsd"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:layout_below="@+id/v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Legistify is an online legal facilitation platform with an aim to bring in disruption and transparency in the legal system of our nation. We develop technology based services for meeting your legal requirement."/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cardCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:id="@+id/cardEx"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardPreventCornerOverlap="false">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout3"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:padding="8dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/edit"
+                    android:layout_marginLeft="4dp"
+                    android:layout_alignEnd="@+id/exd" />
+
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/ex"
+                    android:background="#F5F5F5"/>
+
+                <TextView
+                    android:id="@+id/exd"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:layout_below="@+id/v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="I have extensive experience in handling legal affairs and well versed with various regulations, clauses and best legal practices. I have proven abilities in drafting legal / commercial documents and various kinds of agreements." />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/cardEx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:id="@+id/cardContact"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout4"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:padding="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/contact"
+                        android:background="#F5F5F5"/>
+
+                    <ImageView
+                        android:id="@+id/icontact"
+                        android:paddingTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:src="@drawable/call"
+                        android:layout_below="@+id/contact"
+                        android:layout_marginLeft="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:paddingTop="20dp"
+                        android:text="+91-9462063122"
+                        android:id="@+id/textView15"
+                        android:layout_below="@+id/v3"
+                        android:layout_toEndOf="@+id/icontact"
+                        android:layout_marginLeft="60dp"/>
+
+                    <ImageView
+                        android:id="@+id/iemail"
+                        android:paddingTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:src="@drawable/email"
+                        android:layout_below="@+id/icontact"
+                        android:layout_alignStart="@+id/icontact"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000"
+                        android:layout_alignStart="@+id/textView15"
+                        android:paddingRight="4dp"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp"
+                        android:text="beingaditya95@gmail.com"
+                        android:id="@+id/textView16"
+                        android:layout_below="@+id/textView15" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.aditya.myapplication.view.CircularImageView
+        android:id="@+id/notification_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/notification_icon"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/notification_icon"
+        android:id="@+id/message"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:text="This is a notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_alignStart="@+id/message"
+        android:layout_below="@+id/message"
+        android:text="20/05/16"
+        android:layout_alignBottom="@+id/notification_icon"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

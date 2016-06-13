@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.aditya.myapplication.activity.BankDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/bank_back"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Bank Details"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_below="@+id/bankName"
+            android:id="@+id/bankNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HDFC"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_below="@+id/bankName"
+                android:id="@+id/bankNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                app:met_primaryColor="@color/colorPrimary"
+                android:textCursorDrawable="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayoutNumber"
+            android:layout_below="@+id/rLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/accountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_below="@+id/accountNumber"
+            android:id="@+id/accountNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="157400021"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:met_primaryColor="@color/colorPrimary"
+                android:layout_below="@+id/accountNumber"
+                android:id="@+id/accountNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textCursorDrawable="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayoutType"
+            android:layout_below="@+id/rLayoutNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/accountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Type"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_below="@+id/accountType"
+            android:id="@+id/accountTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Account"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:met_primaryColor="@color/colorPrimary"
+                android:layout_below="@+id/accountType"
+                android:id="@+id/accountTypeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textCursorDrawable="@null"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rLayoutType"
+            android:id="@+id/rLayoutCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/codeIFSC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_below="@+id/codeIFSC"
+            android:id="@+id/codeIFSCText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSBC0400002"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:met_primaryColor="@color/colorPrimary"
+                android:layout_below="@+id/codeIFSC"
+                android:id="@+id/codeIFSCEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textCursorDrawable="@null"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_below="@+id/rLayoutCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:background="@drawable/rectangle"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.myapplication.activity.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@drawable/rectangle2"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/rLayoutSplash"
+            android:layout_width="350dp"
+            android:layout_height="475dp"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_centerHorizontal="true"
+            android:layout_width="350dp"
+            android:layout_height="465dp"
+            android:layout_alignParentTop="true" />
+
+         </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rLayoutSplash"
+            android:id="@+id/splashText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SKIP INTRO"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

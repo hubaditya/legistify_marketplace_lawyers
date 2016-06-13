@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/service_back"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Services"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/searchService"
+                android:textColor="#000000"
+                android:paddingLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search your service here"
+                app:met_primaryColor="@color/colorPrimary"
+                android:textCursorDrawable="@null"/>
+
+            <ListView
+                android:id="@+id/serviceList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchService"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="8dp"
+                android:scrollbars="vertical"/>
+
+        </RelativeLayout>
+</RelativeLayout>

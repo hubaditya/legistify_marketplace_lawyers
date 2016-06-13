@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FilterActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Filter"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#9E9E9E" />
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rLayoutArea"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/iLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/location"/>
+
+            <TextView
+                android:layout_toEndOf="@+id/iLocation"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Location"
+                android:layout_marginLeft="2dp"/>
+
+            <AutoCompleteTextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/location"
+                android:id="@+id/autoArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your area" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rLayoutServices"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rLayoutArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/iGo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/services"
+                android:src="@drawable/go" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/rLayoutServices"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lLayoutTimeOutside"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lLayoutTimeInside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/iTimeline"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/timeline"/>
+
+            <TextView
+                android:layout_marginEnd="3dp"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lLayoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="24 hours"
+                android:textColor="@color/grey"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="48 hours"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="72 hours"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rLayoutPrice"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lLayoutTimeOutside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/iBudget"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:src="@drawable/amount"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_toEndOf="@+id/iBudget"
+            android:id="@+id/budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Price"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+       <SeekBar
+            android:id="@+id/seekBar1"
+           android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:max="20000"/>
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/seekPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

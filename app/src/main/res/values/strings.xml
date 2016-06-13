@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Legistify</string>
+    <string name="profile">Profile</string>
+    <string name="bank">Bank Details</string>
+    <string name="wallet">Wallet</string>
+    <string name="notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_filter">Filter</string>
+    <string name="hint_name">Number of DSC</string>
+    <string name="hint_email">Number of DIN</string>
+    <string name="hint_password">Company PAN No</string>
+    <string name="hint_tan">Company TAN No</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/profile</item>
+        <item>@string/bank</item>
+        <item>@string/wallet</item>
+        <item>@string/notifications</item>
+    </string-array>
+
+    <string-array name="nav_drawer_labels2">
+        <item>@string/about</item>
+        <item>@string/support</item>
+        <item>@string/logout</item>
+    </string-array>
+
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+
+</resources>

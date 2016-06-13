@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardLawyer"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardPreventCornerOverlap="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No of Directors  "
+            android:padding="3dp"
+            android:id="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2"
+            android:padding="3dp"
+            android:id="@+id/textView2"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView1"
+            android:layout_marginStart="41dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Paid Capital  "
+            android:padding="3dp"
+            android:id="@+id/textView3"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="10000"
+            android:padding="3dp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amount  "
+            android:padding="3dp"
+            android:id="@+id/textView5"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5000"
+            android:padding="3dp"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location  "
+            android:visibility="gone"
+            android:padding="3dp"
+            android:id="@+id/textView7"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Delhi"
+            android:visibility="gone"
+            android:padding="3dp"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Timeline  "
+            android:visibility="gone"
+            android:padding="3dp"
+            android:id="@+id/textView9"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1 week"
+            android:visibility="gone"
+            android:padding="3dp"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/textView8"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Comments that the user has written  "
+            android:padding="3dp"
+            android:visibility="gone"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/textView9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Read more"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="3dp"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
